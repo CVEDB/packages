@@ -8,8 +8,6 @@ For each package registry, 5 files are generated:
 - `mismatching_package_repository.csv`: Packages that point to a GitHub repository whose name doesn't match the package name (This isn't always indicative of a compromised package but it helps catch malicious packages that try to impersonate legitimate ones): [PyPI](pypi/mismatching_package_repository.csv), [npm](npm/mismatching_package_repository.csv)
 - `repeating_repositories.csv`: Packages that point to a GitHub repository that another package also points to (This isn't always indicative of a compromised package but it helps catch malicious packages that try to impersonate legitimate ones): [PyPI](pypi/repeating_repositories.csv), [npm](npm/repeating_repositories.csv)
 
-[<img src="./banner.png" />](https://cvedb.khulnasoft.com/auth/register)
-
 ## How it Works
 A [Cvedb](https://cvedb.com) workflow gets the initial dataset from:
 - [hugovk's Top PyPI packages project](https://hugovk.github.io/top-pypi-packages/) for PyPI packages.
