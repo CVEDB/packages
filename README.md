@@ -9,7 +9,7 @@ For each package registry, 5 files are generated:
 - `repeating_repositories.csv`: Packages that point to a GitHub repository that another package also points to (This isn't always indicative of a compromised package but it helps catch malicious packages that try to impersonate legitimate ones): [PyPI](pypi/repeating_repositories.csv), [npm](npm/repeating_repositories.csv)
 
 ## How it Works
-A [Cvedb](https://cvedb.com) workflow gets the initial dataset from:
+A [Cvedb](https://cvedb.khulnasoft.com) workflow gets the initial dataset from:
 - [hugovk's Top PyPI packages project](https://hugovk.github.io/top-pypi-packages/) for PyPI packages.
 - [anvaka's npmrank project](https://github.com/anvaka/npmrank) - [Example](https://gist.github.com/anvaka/8e8fa57c7ee1350e3491) for npm packages.
 
@@ -43,6 +43,4 @@ Then, it performs multiple checks to find any red flags that could indicate that
 All contributions are welcome! Got an idea for another check? Know a way to make a check more accurate? Feel free to create a new ticket via [GitHub issues](https://github.com/cvedb/packages/issues), tweet at us [@khulnasoft](https://twitter.com/khulnasoft), or join the conversation on [Discord](https://discord.gg/7HZmFYTGcQ).
 
 ## Build your own workflows!
-We believe in the value of tinkering. Sign up for a demo on [cvedb.com](https://cvedb.com) to customize this workflow to your use case, get access to many more workflows, or build your own from scratch!
-
-[<img src="./banner.png" />](https://cvedb.khulnasoft.com/auth/register)
+We believe in the value of tinkering. Sign up for a demo on [cvedb.khulnasoft.com](https://cvedb.khulnasoft.com) to customize this workflow to your use case, get access to many more workflows, or build your own from scratch!
